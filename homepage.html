@@ -1,10 +1,12 @@
-<style>body {font-family: monospace;}
+<style>body {font-family: monospace;
+background-color: darkgray}
   
 .container {
+    text-align:center;
     font-size: 35px;
-    height: 200px;
+    height: 100px;
     width: 100%;
-    background: LightGray;
+    background: darkgray;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -12,28 +14,78 @@
     grid-template-areas:
       "header header header"
       "content content content"
-      "content1 content2 content3";}
+      "content1 content2 content3"
+      "content4 content5 content6";}
   
-  .item1{background:LightSkyBlue;
+  .item1{background:dodgerblue;
     grid-area:header;
     text-align: center;
     min-height:100;
     font-size: 35px;
     min-height: 50px;
+    border-radius: 15px;
 }
 
-  .item2{background:LightSalmon;
+  .item2{background:paleturquoise;
     font-size: 20px;
   grid-area:content;
+  border-radius: 15px;
+  padding:10px;
+  border: 5 px;
+
+  
 }
 
   .item3{background:PaleTurquoise;
-   grid-area:content1; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";}
+   grid-area:content1; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";border-radius: 15px;
+   height: 50px ;
+   padding: 15px 5px 2.5px 5px ;
+   }
+   .item3:hover {
+  background-color: yellow;font-style: italic;
 
-  .item4{background:LightPink; grid-area:content2;text-align: center; font-size:25px; height:65px;}
+}
+.item4{background:PaleTurquoise;
+   grid-area:content2; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";border-radius: 15px;
+   height: 50px ;
+   padding: 15px 5px 2.5px 5px ;
+   }
+   .item4:hover {
+  background-color: yellow;font-style: italic;}
 
-  .item5 {background: PaleGreen;
-   grid-area:content3;text-align: center; font-size:25px; height:65px;}
+  
+
+  .item5{background:PaleTurquoise;
+   grid-area:content3; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";border-radius: 15px;
+   height: 50px ;
+   padding: 15px 5px 2.5px 5px ;
+   }
+   .item5:hover {
+  background-color: yellow;font-style: italic;}
+
+  .item6{background:PaleTurquoise;
+   grid-area:content4; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";border-radius: 15px;
+   height: 50px ;
+   padding: 15px 5px 2.5px 5px ;
+   }
+   .item6:hover {
+  background-color: yellow;font-style: italic;}
+
+  .item7{background:PaleTurquoise;
+   grid-area:content5; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";border-radius: 15px;
+   height: 50px ;
+   padding: 15px 5px 2.5px 5px ;
+   }
+   .item7:hover {
+  background-color: yellow;font-style: italic;}
+
+  .item8{background:PaleTurquoise;
+   grid-area:content6; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";border-radius: 15px;
+   height: 50px ;
+   padding: 15px 5px 2.5px 5px ;
+   }
+   .item8:hover {
+  background-color: yellow;font-style: italic;}
 
 
   
@@ -42,6 +94,10 @@
 <div class="container">
   <div class="item1">Greg Danko</div>
   <div class="item2">My goal is to use my background of neuroscience and pharmacology develop software based solutions that will help to propel the field forward </div>
-  <div onclick="location.href='#';" style="cursor: pointer;"; class="item3">Where I've been</div>
-  <div onclick="location.href='#';" style="cursor: pointer;"; class="item4">Where I am</div>
-  <div onclick="location.href='#';" style="cursor: pointer;"; class="item5">Where I'm going</div>
+  <div onclick="location.href='/home/gdanko92/theodinproject/website/page2.html';" style="cursor: pointer;"; class="item3">Where I've been</div>
+  <div onclick="location.href='/home/gdanko92/theodinproject/website/page3.html';" style="cursor: pointer;"; class="item4">Where I am</div>
+  <div onclick="location.href='/home/gdanko92/theodinproject/website/page5.html'" style="cursor: pointer;"; class="item5">Where I'm going</div>
+  <div class="item6">blog</div>
+  <div class="item7">neuroscience</div>
+  <div class="item8">history</div>
+
