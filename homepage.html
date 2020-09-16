@@ -1,0 +1,47 @@
+<style>body {font-family: monospace;}
+  
+.container {
+    font-size: 35px;
+    height: 200px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+      "header header header"
+      "content content content"
+      "content1 content2 content3";}
+  
+  .item1{background:LightSkyBlue;
+    grid-area:header;
+    text-align: center;
+    min-height:100;
+    font-size: 35px;
+    min-height: 50px;
+}
+
+  .item2{background:LightSalmon;
+    font-size: 20px;
+  grid-area:content;
+}
+
+  .item3{background:PaleTurquoise;
+   grid-area:content1; text-align: center; font-size:25px; height:65px; onclick="location.href='#';" style="cursor: pointer;";}
+
+  .item4{background:LightPink; grid-area:content2;text-align: center; font-size:25px; height:65px;}
+
+  .item5 {background: PaleGreen;
+   grid-area:content3;text-align: center; font-size:25px; height:65px;}
+
+
+  
+</style>
+
+<div class="container">
+  <div class="item1">Greg Danko</div>
+  <div class="item2">My goal is to use my background of neuroscience and pharmacology develop software based solutions that will help to propel the field forward </div>
+  <div onclick="location.href='#';" style="cursor: pointer;"; class="item3">Where I've been</div>
+  <div onclick="location.href='#';" style="cursor: pointer;"; class="item4">Where I am</div>
+  <div onclick="location.href='#';" style="cursor: pointer;"; class="item5">Where I'm going</div>
